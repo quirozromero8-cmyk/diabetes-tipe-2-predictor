@@ -26,26 +26,26 @@ Se utilizó **BalancedRandomForestClassifier** para manejar el desbalance de cla
 
 | Métrica   | Valor |
 |-----------|-------|
-| Recall    | 79%   |
-| Precisión | 69%   |
-| F1-Score  | 74%   |
+| Recall    | 78%   |
+| Precisión | 74%   |
+| F1-Score  | 75%   |
 
-> El recall es la métrica más importante en diagnósticos médicos: minimiza los falsos negativos (casos de diabetes no detectados).
+Se busco dar prioridad al recall, por ello el uso de BalancedRandomForestClassifier, debido a que es una de las metricas mas importante a la hora de la realizacion de diagnósticos médicos preventivos. Con ello minimizando la aparicion de falsos negativos (casos de diabetes no detectados).
 
 ## 🚀 Cómo ejecutar:
 
-### 1. Clonar el repositorio
+### 1. Clonar el repositorio:
 ```bash
 git clone https://github.com/TU_USUARIO/diabetes-predictor.git
 cd diabetes-predictor
 ```
 
-### 2. Instalar dependencias
+### 2. Instalar dependencias:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Abrir el notebook
+### 3. Abrir el notebook:
 ```bash
 jupyter notebook diabetes.ipynb
 ```
