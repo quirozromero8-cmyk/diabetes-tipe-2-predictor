@@ -1,8 +1,9 @@
 # 🩺 Predictor de Riesgo de Diabetes Tipo II
 
-Modelo de Machine Learning que busca predecir la probabilidad de que un individuo evaluado pueda encontrarse dentro de la población de riesgo de padecer Diabetes Tipo II, a partir de factores clínicos y de estilo de vida del evaluado.
+Modelo de Machine Learning que busca predecir la probabilidad que un individuo evaluado pueda encontrarse dentro de la población de riesgo de padecer Diabetes Tipo II, a partir de factores clínicos y de estilo de vida del evaluado.
 
-Este modelo nace con el objetivo de desarrollar herramientas que faciliten la elaboración de diagnósticos preventivos contra el desarrollo de la pre-diabetes o la diabetes tipo II, enfermedad que en los últimos años ha ido en aumento. Lo cual es alarmante para la comunidad médica, debido a que la diabetes puede ser el detonante de otras enfermedades o condiciones médicas como: ceguera, enfermedades cardiovasculares, derrames cerebrales, enfermedades del riñón y amputación de miembros inferiores (OMS, 2024). La diabetes está directamente relacionada con más de un millón de muertes en el año 2021, según la Organización Mundial de la Salud (OMS, 2024).
+Este modelo nace con el objetivo de desarrollar herramientas que faciliten la elaboración de diagnósticos preventivos contra el desarrollo de la diabetes tipo II, enfermedad que en los últimos años ha ido en aumento. Lo cual representa un problema alarmante para la salud pública, debido a que la diabetes está relacionada con otras enfermedades o complicaciones médicas como: la ceguera, enfermedades cardiovasculares, derrames cerebrales, enfermedades del riñón y amputación de miembros inferiores (OMS, 2024). Estas complicaciones, a largo plazo, perjudican los sistemas de salud al aumentar el gasto de los recursos médicos y saturar las instituciones médicas en la atención de condiciones derivadas de la diabetes. Es importante remarcar que, en el año 2021, según la Organización Mundial de la Salud, más de un millón de muertes en el mundo estuvieron relacionadas con la diabetes, cifra que en los últimos años continúa en aumento (OMS, 2024).
+
 Si bien este modelo busca ser de fácil acceso para quien lo requiera y, de esa manera, contribuir con la prevención del desarrollo de la diabetes, como se mencionó anteriormente, es importante dar a conocer las debilidades o dificultades que presenta este modelo:
 
   1) De las variables independientes, hay valores que solo se pueden obtener a través de exámenes de sangre.
@@ -30,7 +31,9 @@ Se utilizó **BalancedRandomForestClassifier** para manejar el desbalance de cla
 | Precisión | 74%   |
 | F1-Score  | 75%   |
 
-Se busco dar prioridad al recall, por ello el uso de BalancedRandomForestClassifier, debido a que es una de las metricas mas importante a la hora de la realizacion de diagnósticos médicos preventivos. Con ello minimizando la aparicion de falsos negativos (casos de diabetes no detectados).
+Se busco dar prioridad al **recall**, por ello el uso de BalancedRandomForestClassifier, debido a que es una de las metricas mas importante a la hora de la realizacion de diagnósticos médicos preventivos. Con ello minimizando la aparicion de falsos negativos (casos de diabetes no detectados).
+
+Con un **racall** ndel 78%
 
 ## 🚀 Cómo ejecutar:
 
