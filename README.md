@@ -1,13 +1,15 @@
-# 🩺 Predictor de Riesgo de Diabetes Tipo II
+# Type II Diabetes Risk Predictor
 
-Modelo de Machine Learning que busca predecir la probabilidad que un individuo evaluado pueda encontrarse dentro de la población de riesgo de padecer Diabetes Tipo II, a partir de factores clínicos y de estilo de vida del evaluado.
+A Machine Learning model designed to predict the likelihood that an evaluated individual may fall within the at-risk population for developing Type II Diabetes, based on the individual's clinical and lifestyle factors.
 
-Este modelo nace con el objetivo de desarrollar herramientas que faciliten la elaboración de diagnósticos preventivos contra el desarrollo de la diabetes tipo II, enfermedad que en los últimos años ha ido en aumento. Lo cual representa un problema alarmante para la salud pública, debido a que la diabetes está relacionada con otras enfermedades o complicaciones médicas como: la ceguera, enfermedades cardiovasculares, derrames cerebrales, enfermedades del riñón y amputación de miembros inferiores (WHO, 2024). Estas complicaciones, a largo plazo, perjudican los sistemas de salud al aumentar el gasto de los recursos médicos y saturar las instituciones médicas en la atención de condiciones derivadas de la diabetes (GBD, 2025). Es importante remarcar que, en el año 2021, según la Organización Mundial de la Salud, más de un millón de muertes en el mundo estuvieron relacionadas con la diabetes, cifra que en los últimos años continúa en aumento (WHO, 2024).
+This model was developed with the goal of creating tools that facilitate the elaboration of preventive diagnoses against the development of Type II diabetes, a disease that has been on the rise in recent years. This represents an alarming public health concern, as diabetes is associated with other diseases and medical complications such as: blindness, cardiovascular disease, stroke, kidney disease, and lower limb amputation (WHO, 2024). In the long term, these complications strain healthcare systems by increasing the consumption of medical resources and overwhelming medical institutions with the management of diabetes-related conditions (GBD, 2025). It is important to highlight that, in 2021, according to the World Health Organization, more than one million deaths worldwide were linked to diabetes — a figure that has continued to rise in recent years (WHO, 2024).
 
-Si bien este modelo busca ser de fácil acceso para quien lo requiera y, de esa manera, contribuir con la prevención del desarrollo de la diabetes, como se mencionó anteriormente, es importante dar a conocer las debilidades o dificultades que presenta este modelo:
+While this model aims to be easily accessible to anyone who needs it and, in doing so, contribute to the prevention of diabetes development, it is important to acknowledge the limitations and challenges this model presents:
 
-  1) De las variables independientes, hay valores que solo se pueden obtener a través de exámenes de sangre.
-  2) El modelo se entrenó con variables que tienen una alta correlación con el diagnóstico de diabetes tipo 2 (como la edad, el IMC, niveles de glucosa en sangre, etc.), pero no tiene en cuenta otros factores fundamentales como: tiempo de actividad física diaria, ingresos mensuales del paciente, cantidad de carbohidratos que consume, etc. Factores que, si se tienen presentes, pueden ser fundamentales para facilitar, de mejor manera, el desarrollo de diagnósticos preventivos contra la diabetes tipo 2.
+1). Among the independent variables, some values can only be obtained through blood tests.
+
+2). The model was trained on variables that have a high correlation with a Type 2 diabetes diagnosis (such as age, BMI, blood glucose levels, etc.), but does not account for other fundamental factors such as: daily physical
+- activity time, the patient's monthly income, carbohydrate intake, etc. — factors that, if considered, could be instrumental in better facilitating the development of preventive diagnoses against Type 2 diabetes.
 
 Referencia Bibliográfica:
 
@@ -15,46 +17,46 @@ WHO, (14/11/2024), Diabetes. https://www.who.int/news-room/fact-sheets/detail/di
 GBD 2021 Diabetes Collaborators, (15/07/2025), Global, regional, and national burden of diabetes from 1990 to 2021, with projections of prevalence to 2050: a systematic analysis for the Global Burden of Disease Study 2021. https://pubmed.ncbi.nlm.nih.gov/37356446/
 
 
-## 📊 Dataset:
+## Dataset:
 
-- **Fuente:** [Kaggle - Diabetes Prediction Dataset](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset/data/code)
-- **Tamaño:** 100,000 pacientes
-- **Variables:** edad, IMC, hipertensión, enfermedad cardíaca, historial de tabaquismo, glucosa en sangre, nivel de HbA1c
+- **Source:** [Kaggle - Diabetes Prediction Dataset](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset/data/code)
+- **Size:** 100,000 pacientes
+- **Variables:** age, BMI, hypertension, heart disease, smoking history, blood glucose, HbA1c level
 
-## 🤖 Modelo:
+## Model:
 
-Se utilizó **BalancedRandomForestClassifier** para manejar el desbalance de clases (ratio ~10:1 entre no diabéticos y diabéticos).
+**BalancedRandomForestClassifier** was used to handle class imbalance (a ~10:1 ratio between non-diabetic and diabetic cases).
 
-### Resultados:
+### Results:
 
-| Métrica   | Valor |
+| Metric    | Value |
 |-----------|-------|
 | Recall    | 79%   |
 | Precisión | 69%   |
 | F1-Score  | 74%   |
 
-Se busco dar prioridad al **recall**, debido a la importancia de esta metrica a la hora de la realizacion de diagnósticos médicos preventivos. Ya que se busca minimizar la aparicion de falsos negativos (casos de diabetes no detectados). Pero buscando mantener un F1-Score alto (74%), asegurandonos que la mayoria de los diagnosticados con diabetes sean verdaderos psoitivos(Precisión del 69%).
+Priority was given to **recall**, due to the importance of this metric when performing preventive medical diagnoses, as the goal is to minimize the occurrence of false negatives (undetected diabetes cases). While still maintaining a high F1-Score (74%), ensuring that the majority of those diagnosed with diabetes are true positives (Precision of 69%).
 
 
-## 🚀 Cómo ejecutar:
+## how tu run: 
 
-### 1. Clonar el repositorio:
+### 1. Clone the repository:
 ```bash
 git clone https://github.com/quirozromero8-cmyk/diabetes-predictor.git
 cd diabetes-predictor
 ```
 
-### 2. Instalar dependencias:
+### 2. Install Dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Abrir el notebook:
+### 3. Open the notebook:
 ```bash
 jupyter notebook diabetes.ipynb
 ```
 
-## 📁 Estructura del proyecto:
+## Project Structure:
 
 ```
 diabetes-predictor/
@@ -65,7 +67,7 @@ diabetes-predictor/
 └── README.md               
 ```
 
-## 🛠️ Tecnologías Implementadas:
+## Technologies Used:
 
 - Python
 - Pandas
