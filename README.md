@@ -40,7 +40,7 @@ Se busco dar prioridad al **recall**, debido a la importancia de esta metrica a 
 
 ### 1. Clonar el repositorio:
 ```bash
-git clone https://github.com/TU_USUARIO/diabetes-predictor.git
+git clone https://github.com/quirozromero8-cmyk/diabetes-predictor.git
 cd diabetes-predictor
 ```
 
