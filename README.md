@@ -59,10 +59,10 @@ jupyter notebook diabetes.ipynb
 ```
 diabetes-predictor/
 │
-├── diabetes.ipynb          # Notebook principal con el modelo
-├── diabetes_prediction_dataset.csv   # Dataset
-├── requirements.txt        # Dependencias
-└── README.md               # Este archivo
+├── diabetes.ipynb          
+├── diabetes_prediction_dataset.csv   
+├── requirements.txt        
+└── README.md               
 ```
 
 ## 🛠️ Tecnologías Implementadas:
