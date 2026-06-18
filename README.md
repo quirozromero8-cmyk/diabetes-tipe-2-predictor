@@ -67,7 +67,7 @@ diabetes-predictor/
 └── README.md               
 ```
 
-## Technologies Used:
+## Technologies Implemented:
 
 - Python
 - Pandas
